@@ -204,6 +204,32 @@ class PortfolioHomePage extends StatelessWidget {
                       ),
                     ],
                   ),
+                  Row(
+                    children: [
+                      Icon(Icons.language, color: Colors.blue),
+                      SizedBox(width: 8),
+                      Flexible(
+                        child: GestureDetector(
+                          onTap: () async {
+                            final Uri uri = Uri.parse('https://roncada.vercel.app');
+                            if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text('Could not launch the website')),
+                              );
+                            }
+                          },
+                          child: Text(
+                            'roncada.vercel.app',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
                   SizedBox(height: 8),
                   Row(
                     children: [
@@ -214,9 +240,23 @@ class PortfolioHomePage extends StatelessWidget {
                       ),
                       SizedBox(width: 8),
                       Flexible(
-                        child: SelectableText(
-                          'github.com/lucifron28',
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        child: GestureDetector(
+                          onTap: () async {
+                            final Uri uri = Uri.parse('https://github.com/lucifron28');
+                            if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text('Could not launch the website')),
+                              );
+                            }
+                          },
+                          child: Text(
+                            'github.com/lucifron28',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.blue,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
                         ),
                       ),
                     ],
