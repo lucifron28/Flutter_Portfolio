@@ -11,7 +11,7 @@ class MyPortfolioApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'My Portfolio',
+      title: 'Ron Vincent Cada - Portfolio',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.teal,
@@ -491,6 +491,27 @@ class PortfolioHomePage extends StatelessWidget {
                     techStack: ['HTML', 'CSS', 'JavaScript'],
                     imageUrl: 'assets/coffee-crumbs.png',
                     repoUrl: 'github.com/lucifron28/CoffeeCrumbs',
+                  ),
+                  ProjectCard(
+                    title: 'NP-Music',
+                    description: 'A desktop application that allows user to play mp3 files and create playlists.',
+                    techStack: ['C++', 'Qt5', 'QML'],
+                    imageUrl: 'assets/np-music.png',
+                    repoUrl: 'https://github.com/lucifron28/CP103-Semi-Finals-Project-NPMusic',
+                  ),
+                  ProjectCard(
+                    title: 'PNA Bank',
+                    description: 'A banking system that allows user to create an account, deposit and withdraw.',
+                    techStack: ['HTML', 'CSS', 'JavaScript', 'Python', 'FastAPI'],
+                    imageUrl: 'assets/pna_bank.png',
+                    repoUrl: 'https://github.com/lucifron28/PNA-Bank-CSPI101-Midterm-Project',
+                  ),
+                  ProjectCard(
+                    title: 'Elegant Essentials',
+                    description: 'A web application that allows users to browse and add products to cart online.',
+                    techStack: ['HTML', 'CSS', 'JavaScript'],
+                    imageUrl: 'assets/elegant-essentials.png',
+                    repoUrl: 'github.com/lucifron28/Elegant-Essentials',
                   ),
                 ],
               ),
