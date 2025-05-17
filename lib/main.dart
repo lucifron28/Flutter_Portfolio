@@ -341,6 +341,7 @@ class PortfolioHomePage extends StatelessWidget {
                       Chip(label: Text('Git'), backgroundColor: Theme.of(context).colorScheme.secondary),
                       Chip(label: Text('GitHub'), backgroundColor: Theme.of(context).colorScheme.secondary),
                       Chip(label: Text('SQLAlchemy'), backgroundColor: Theme.of(context).colorScheme.secondary),
+                      Chip(label: Text('Docker'), backgroundColor: Theme.of(context).colorScheme.secondary),
                     ],
                   ),
                 ],
