@@ -6,6 +6,8 @@ void main() {
 }
 
 class MyPortfolioApp extends StatelessWidget {
+  const MyPortfolioApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -37,6 +39,8 @@ class PortfolioHomePage extends StatelessWidget {
   final GlobalKey skillsKey = GlobalKey();
   final GlobalKey interestsKey = GlobalKey();
   final GlobalKey projectsKey = GlobalKey();
+
+  PortfolioHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
