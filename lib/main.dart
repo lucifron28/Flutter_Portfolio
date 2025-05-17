@@ -46,7 +46,7 @@ class PortfolioHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('My Portfolio'),
+        title: Text('Ron Vincent Cada - Portfolio'),
         backgroundColor: Theme.of(context).primaryColor,
         actions: [
           PopupMenuButton<String>(
@@ -222,7 +222,7 @@ class PortfolioHomePage extends StatelessWidget {
                             'roncada.vercel.app',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                              color: Colors.black,
                               decoration: TextDecoration.underline,
                             ),
                           ),
@@ -253,7 +253,7 @@ class PortfolioHomePage extends StatelessWidget {
                             'github.com/lucifron28',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                              color: Colors.black,
                               decoration: TextDecoration.underline,
                             ),
                           ),
@@ -269,11 +269,25 @@ class PortfolioHomePage extends StatelessWidget {
                         width: 24,
                         height: 24,
                       ),
-                      const SizedBox(width: 8),
+                      SizedBox(width: 8),
                       Flexible(
-                        child: SelectableText(
-                          'linkedin.com/in/ron-vincent-cada-a939282a7/',
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+                        child: GestureDetector(
+                          onTap: () async {
+                            final Uri uri = Uri.parse('https://www.linkedin.com/in/ron-vincent-cada-a939282a7');
+                            if (!await launchUrl(uri, mode: LaunchMode.externalApplication)) {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text('Could not launch the website')),
+                              );
+                            }
+                          },
+                          child: Text(
+                            'https://www.linkedin.com/in/ron-vincent-cada-a939282a7/',
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
                         ),
                       ),
                     ],
