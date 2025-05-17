@@ -32,18 +32,6 @@ A Flutter-based portfolio application showcasing my profile, skills, interests, 
 - **Projects:** Custom `ProjectCard` widget showing image, title, description, tech stack, and a clickable repository link.
 - **Smooth Scrolling:** Popup menu for quick navigation between sections.
 
----
-
-## Demo
-
----
-
-## Screenshots
-
----
-
-## Getting Started
-
 ### Prerequisites
 - [Flutter SDK](https://flutter.dev/docs/get-started/install)
 - Android Studio or VS Code with Flutter & Dart plugins
